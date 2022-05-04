@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/main-styles.css">
 
     <!-- * There are custom css file -->
-    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <!--[if lt IE 9]>
     	<script src="js/html5shiv.js"></script>
@@ -31,9 +31,47 @@
 
 <body>
 
-    <p>khaled</p>
+    <header class="landing" id="landing">
+        <div class="container">
+            <nav class="landing__navbar">
+                <h1 class="landing__navbar__logo">
+                    special design
+                </h1> <!-- ./landing__navbar__logo -->
+
+                <ul class="landing__navbar__menu" id="navBarMenu">
+                    <li class="landing__navbar__menu__li">
+                        <a class="landing__navbar__menu__li__anchor" href="#">about</a>
+                    </li> <!-- ./landing__navbar__menu__li -->
+
+                    <li class="landing__navbar__menu__li">
+                        <a class="landing__navbar__menu__li__anchor" href="#">services</a>
+                    </li> <!-- ./landing__navbar__menu__li -->
+
+                    <li class="landing__navbar__menu__li">
+                        <a class="landing__navbar__menu__li__anchor" href="#">products</a>
+                    </li> <!-- ./landing__navbar__menu__li -->
+
+                    <li class="landing__navbar__menu__li">
+                        <a class="landing__navbar__menu__li__anchor" href="#">contact</a>
+                    </li> <!-- ./landing__navbar__menu__li -->
+                </ul> <!-- ./landing__navbar__menu -->
+
+                <div class="landing__navbar__bars" id="barsIcon">
+                    <span class="landing__navbar__bars__line"></span>
+                </div> <!-- ./landing__navbar__bars -->
+            </nav> <!-- ./landing__navbar -->
+
+            <div class="landing__intro">
+                <h2 class="landing__intro__title">hello there, man!</h2>
+                <p class="landing__intro__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sed!
+                </p> <!-- ./landing__intro__desc -->
+            </div> <!-- ./landing__intro -->
+        </div> <!-- ./container -->
+    </header> <!-- ./landing -->
+
     <!-- * Script files -->
-    <script src="js/main-script.js"></script>
+    <script src="js/header-script.js"></script>
 </body>
 
 </html>
