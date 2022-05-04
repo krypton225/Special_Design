@@ -55,3 +55,17 @@ let navBarMenu = document.getElementById("navBarMenu");
 landingBarsIcon.addEventListener("click", () => {
   navBarMenu.classList.toggle("toggle-navbar-menu");
 });
+
+/**
+ * * Close the toggle menu when in responsive mode after clicking on any one of the anchors.
+ */
+
+let myLinksInMenu = document.querySelectorAll("#navBarMenu li");
+
+myLinksInMenu.forEach((oneLink) => {
+  oneLink.addEventListener("click", (e) => {
+    if (navBarMenu.classList.contains("toggle-navbar-menu")) {
+      navBarMenu.classList.remove("toggle-navbar-menu");
+    }
+  });
+});

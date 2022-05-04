@@ -1,0 +1,137 @@
+.settings {
+  width: 25%;
+  height: 30vh;
+  border-radius: 0 10px 10px 0;
+  position: fixed;
+  top: 90%;
+  left: -25%;
+  transform: translateY(-100%);
+  background-color: rgba(46, 46, 46, 0.925);
+  color: azure;
+  z-index: 3;
+  transition: left 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .settings {
+    width: 70%;
+    left: -70%;
+  }
+}
+
+.settings.open {
+  left: 0;
+}
+
+.settings__icon {
+  padding: 1rem;
+  font-size: 2rem;
+  position: absolute;
+  right: -40px;
+  top: 15vh;
+  transform: translateY(-50%);
+  background-color: rgba(61, 51, 73, 0.315);
+  cursor: pointer;
+}
+
+.settings__icon__intern {
+  animation-name: rotation_360deg;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-fill-mode: both;
+}
+
+.settings__content {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.settings__content__colors {
+  width: 100%;
+  height: 30px;
+  padding: 1.7rem;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(155, 155, 155, 0.212);
+}
+
+.settings__content__colors__title {
+  line-height: 30px;
+  letter-spacing: 1.3px;
+  text-transform: capitalize;
+  display: block;
+}
+
+.settings__content__colors__list {
+  width: 70%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.settings__content__colors__list li {
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .settings__content__colors__list {
+    width: 90%;
+  }
+
+  .settings__content__colors__list li {
+    width: 20px;
+    height: 18px;
+    border-radius: 50%;
+  }
+}
+
+.settings__content__colors__list li:first-child {
+  background-color: #3d3349;
+}
+
+.settings__content__colors__list li:nth-child(2) {
+  background-color: #e76f51;
+}
+
+.settings__content__colors__list li:nth-child(3) {
+  background-color: #0077b6;
+}
+
+.settings__content__colors__list li:nth-child(4) {
+  background-color: #073b4c;
+}
+
+.settings__content__colors__list li:nth-child(5) {
+  background-color: #2ec4b6;
+}
+
+.settings__content__colors__list li.active {
+  opacity: 1;
+  border: 1px solid #fff;
+}
+
+/* * Animations */
+@keyframes rotation_360deg {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -23,6 +23,7 @@
 
     <!-- * There are custom css file -->
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/settings.css">
 
     <!--[if lt IE 9]>
     	<script src="js/html5shiv.js"></script>
@@ -31,6 +32,27 @@
 
 <body>
 
+    <!-- * The setting icon -->
+    <div class="settings" id="setting">
+        <div class="settings__icon" id="settingIcon">
+            <i class="fas fa-cog settings__icon__intern"></i>
+        </div> <!-- ./settings__icon -->
+
+        <div class="settings__content">
+            <div class="settings__content__colors">
+                <h5 class="settings__content__colors__title">colors</h5>
+                <ul class="settings__content__colors__list">
+                    <li class="active" data-color="#3D3349"></li>
+                    <li data-color="#e76f51"></li>
+                    <li data-color="#0077b6"></li>
+                    <li data-color="#073b4c"></li>
+                    <li data-color="#2ec4b6"></li>
+                </ul> <!-- ./settings__content__colors__list -->
+            </div> <!-- ./settings__content__colors -->
+        </div> <!-- ./settings__content -->
+    </div> <!-- ./settings -->
+
+    <!-- * Landing page of the site -->
     <header class="landing" id="landing">
         <div class="container">
             <nav class="landing__navbar">
@@ -71,6 +93,7 @@
     </header> <!-- ./landing -->
 
     <!-- * Script files -->
+    <script src="js/settings-script.js"></script>
     <script src="js/header-script.js"></script>
 </body>
 
