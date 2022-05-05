@@ -49,3 +49,8 @@ if (localStorage.getItem("bgColor") !== null) {
     }
   });
 }
+
+/**
+ * * We put the background changing randomly codes in the header-script.js with it for good reading file.
+ * * To collect the codes in one place.
+ */

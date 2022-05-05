@@ -34,16 +34,57 @@ const getRandomNumber = (index) => {
   return Math.floor(Math.random() * index);
 };
 
-const counterOfImagesInLandingPage = () => {
-  setInterval(() => {
-    let myRandomNumber = getRandomNumber(myImages.length);
+let bgChanging = true;
+let getBgInterval;
 
-    landing.style.backgroundImage = `url("../imgs/backgrounds-landing/${myImages[myRandomNumber].imgSrc}")`;
-    landingIntroTitle.textContent = myImages[myRandomNumber].landingTitle;
-  }, 3000);
+const showingImgaesInLandingPage = () => {
+  if (bgChanging) {
+    getBgInterval = setInterval(() => {
+      let myRandomNumber = getRandomNumber(myImages.length);
+
+      landing.style.backgroundImage = `url("../imgs/backgrounds-landing/${myImages[myRandomNumber].imgSrc}")`;
+      landingIntroTitle.textContent = myImages[myRandomNumber].landingTitle;
+    }, 3000);
+  }
 };
 
-counterOfImagesInLandingPage();
+showingImgaesInLandingPage();
+
+/**
+ * * Background random changing (Yes OR Not)
+ */
+
+let myButtonsSpan = document.querySelectorAll(
+  ".settings__content__random-bg__buttons span"
+);
+
+myButtonsSpan.forEach((oneSpan) => {
+  oneSpan.addEventListener("click", (eo) => {
+    // * Remove active class.
+    eo.target.parentElement.querySelectorAll(".active").forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    // * Add active class.
+    eo.target.classList.add("active");
+
+    if (eo.target.dataset.random === "yes") {
+      bgChanging = true;
+      showingImgaesInLandingPage();
+    } else {
+      bgChanging = false;
+      clearInterval(getBgInterval);
+    }
+
+    localStorage.setItem("bg_opiton", bgChanging);
+  });
+});
+
+if (localStorage.getItem("bg_option" === "true")) {
+  bgChanging = true;
+} else {
+  bgChanging = false;
+}
 
 /**
  * * This is for opening the toggle menu of the nav bar.
