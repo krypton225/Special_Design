@@ -57,6 +57,10 @@
   font-size: 2.7rem;
 }
 
+.landing__navbar__logo a {
+  color: #fff;
+}
+
 .landing__navbar__menu {
   display: flex;
   justify-content: space-evenly;
