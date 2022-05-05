@@ -1,0 +1,45 @@
+.btn-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999999999999;
+  transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.show-go-to-top {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-top__link {
+  padding: 0;
+  border-radius: 50%;
+  outline: none;
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+.btn-top__link:link,
+.btn-top__link:active,
+.btn-top__link:focus,
+.btn-top__link:visited {
+  background-color: var(--main-color);
+  color: #fff;
+  outline: none;
+}
+
+.btn-top__link i {
+  border-radius: 50%;
+  outline: none;
+  padding: 15px;
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
