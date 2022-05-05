@@ -23,14 +23,35 @@
 
 .landing__navbar {
   width: 100%;
-  padding: 1.66rem 0;
-  position: relative;
+  padding: 1.66rem 5.3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
   text-transform: capitalize;
-  z-index: 2;
+  transition: all 0.3s ease-in;
+  z-index: 99999999999999;
+}
+
+@media (max-width: 768px) {
+  .landing__navbar {
+    padding: 1.66rem 2rem;
+  }
+}
+
+.landing__navbar.sticky-scroll {
+  padding: 1.66rem 7rem;
+  background-color: rgb(24, 28, 37);
+  box-shadow: 0 2px 12px 2px rgba(255, 255, 255, 0.199);
+}
+
+@media (max-width: 768px) {
+  .landing__navbar.sticky-scroll {
+    padding: 1.66rem 1rem;
+  }
 }
 
 .landing__navbar__logo {
@@ -50,6 +71,12 @@
   width: 15px;
   height: 3px;
   background-color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .landing__navbar__logo {
+    font-size: 2rem;
+  }
 }
 
 .landing__navbar__logo::first-letter {

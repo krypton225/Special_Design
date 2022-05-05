@@ -1,4 +1,13 @@
 /**
+ * * Making the background of the nav bar show when scrolling.
+ **/
+
+window.addEventListener("scroll", function () {
+  const navBar = document.querySelector("#landingNavBar");
+  navBar.classList.toggle("sticky-scroll", window.scrollY > 250);
+});
+
+/**
  * * Making the background of the header in the landing page changing after a seconds automatically!
  **/
 

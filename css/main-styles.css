@@ -6,15 +6,29 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(24, 28, 37);
 }
 
 :root {
   --main-color: rgb(61, 51, 73);
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: rgb(24, 28, 37);
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
 }
 
 a {
