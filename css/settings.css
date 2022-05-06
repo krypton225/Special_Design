@@ -8,7 +8,7 @@
   transform: translateY(-100%);
   background-color: rgba(46, 46, 46, 0.925);
   color: azure;
-  z-index: 3;
+  z-index: 99999999999999999999999999;
   transition: left 0.4s ease-in-out;
 }
 

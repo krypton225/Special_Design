@@ -31,6 +31,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+::selection {
+  color: #fff;
+  background: var(--main-color);
+}
+
 a {
   text-decoration: none;
 }

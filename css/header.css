@@ -23,7 +23,7 @@
 
 .landing__navbar {
   width: 100%;
-  padding: 1.66rem 5.3rem;
+  padding: 1.66rem 5.2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -59,7 +59,7 @@
   margin: 0;
   align-self: flex-start;
   letter-spacing: 2px;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
