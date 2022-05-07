@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(24, 28, 37);
+  overflow-x: hidden;
 }
 
 :root {

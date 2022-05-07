@@ -23,7 +23,7 @@
 
 .landing__navbar {
   width: 100%;
-  padding: 1.66rem 5.2rem;
+  padding: 1.66rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,14 +43,14 @@
 }
 
 .landing__navbar.sticky-scroll {
-  padding: 1.66rem 7rem;
+  padding: 1.66rem 3rem;
   background-color: rgb(24, 28, 37);
   box-shadow: 0 2px 12px 2px rgba(255, 255, 255, 0.199);
 }
 
 @media (max-width: 768px) {
   .landing__navbar.sticky-scroll {
-    padding: 1.66rem 1rem;
+    padding: 1.66rem 0.5rem;
   }
 }
 
@@ -99,7 +99,7 @@
 @media (max-width: 768px) {
   .landing__navbar__menu {
     width: 100%;
-    height: 24vh;
+    height: 30vh;
     margin: 0 auto;
     border-radius: 0 0 10px 10px;
     text-align: center;
@@ -125,7 +125,7 @@
 }
 
 .landing__navbar__menu__li {
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 @media (max-width: 768px) {
