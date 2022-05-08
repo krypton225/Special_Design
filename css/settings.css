@@ -1,3 +1,39 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * settings
+  * settings media query
+  * settings.open
+  * settings__icon
+  * settings__icon__intern
+  * settings__content
+  * settings__content div
+  * h5.settings__content.title
+  * h5.settings__content.title media query
+  * settings__content__colors__list
+  * settings__content__colors__list li
+  * settings__content__colors__list && settings__content__colors__list li li media query
+  * settings__content__colors__list li:first-child
+  * .settings__content__colors__list li:nth-child(2)
+  * .settings__content__colors__list li:nth-child(3)
+  * .settings__content__colors__list li:nth-child(4)
+  * .settings__content__colors__list li:nth-child(5)
+  * settings__content__colors__list li.active
+  * settings__content__random-bg
+  * settings__content__random-bg h5.settings__content.title
+  * settings__content__random-bg h5.settings__content.title media query
+  * settings__content__random-bg__buttons
+  * settings__content__random-bg__buttons span
+  * settings__content__random-bg__buttons span media query
+  * settings__content__random-bg__buttons span.active
+  * Animation (rotation_360deg)
+
+  * ****************************************************
+*/
+
 .settings {
   width: 35%;
   height: 30vh;
