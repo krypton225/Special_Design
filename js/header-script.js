@@ -51,7 +51,7 @@ const showingImgaesInLandingPage = () => {
     getBgInterval = setInterval(() => {
       let myRandomNumber = getRandomNumber(myImages.length);
 
-      landing.style.backgroundImage = `url("../imgs/backgrounds-landing/${myImages[myRandomNumber].imgSrc}")`;
+      landing.style.backgroundImage = `url("./imgs/backgrounds-landing/${myImages[myRandomNumber].imgSrc}")`;
       landingIntroTitle.textContent = myImages[myRandomNumber].landingTitle;
     }, 3000);
   }
