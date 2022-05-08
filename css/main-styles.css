@@ -1,3 +1,39 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * 1- Elements styles:
+      * 1.1- Astrik.
+      * 1.2- html.
+      * 1.3- :root element.
+      * 1.4- body.
+      * 1.5- body scrollbar.
+      * 1.6- body scrollbar-track.
+      * 1.7- body scrollbar-thumb.
+      * 1.8- Selection in body.
+      * 1.9- Anchor tag.
+      * 1.10- Unorder list tag.
+      * 1.11- Section tag.
+
+  * 2- Classes styles:
+    * 2.1- container class styles.
+        *   2.1.1- container class styles in small.
+        *   2.1.2- container class styles in medium.
+        *   2.1.3- container class styles in large.
+    * 2.2- sec-title style.
+        *   2.2.1- sec-title style in max-width: 768px.
+        *   2.2.2- sec-title h3 style.
+        *   2.2.3- sec-title h3 first letter style.
+        *   2.2.4- sec-title h3 before style.
+        *   2.2.5- sec-title h3 before style in max-width: 768px.
+    * 2.3- sec-title span style.
+        *   2.3.1- sec-title:hover span style.
+
+  * ****************************************************
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +45,14 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --main-color: rgb(61, 51, 73);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(24, 28, 37);
   overflow-x: hidden;
-}
-
-:root {
-  --main-color: rgb(61, 51, 73);
 }
 
 body::-webkit-scrollbar {
