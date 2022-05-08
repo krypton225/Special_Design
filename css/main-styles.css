@@ -49,6 +49,12 @@ html {
   --main-color: rgb(61, 51, 73);
 }
 
+/* *
+  * *****************
+  * #body
+  * *****************
+* */
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(24, 28, 37);
@@ -68,24 +74,54 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+/* *
+  * *****************
+  * #selection
+  * *****************
+* */
+
 ::selection {
   color: #fff;
   background: var(--main-color);
 }
 
+/* *
+  * *****************
+  * #anchor
+  * *****************
+* */
+
 a {
   text-decoration: none;
 }
 
+/* *
+  * *****************
+  * #ul
+  * *****************
+* */
+
 ul {
   list-style-type: none;
 }
+
+/* *
+  * *****************
+  * #section
+  * *****************
+* */
 
 section {
   width: 100%;
   height: 100vh;
   padding: 8rem 0;
 }
+
+/* *
+  * *****************
+  * #container
+  * *****************
+* */
 
 .container {
   padding-left: 15px;
@@ -114,6 +150,12 @@ section {
     width: 1170px;
   }
 }
+
+/* *
+  * *****************
+  * #sec-title
+  * *****************
+* */
 
 .sec-title {
   width: fit-content;
