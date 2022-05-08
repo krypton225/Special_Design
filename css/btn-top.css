@@ -1,3 +1,18 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * btn-top
+  * show-go-to-top
+  * btn-top__link
+  * btn-top__link:link, btn-top__link:active, btn-top__link:focus, btn-top__link:visited
+  * btn-top__link i
+
+  * ****************************************************
+* */
+
 .btn-top {
   position: fixed;
   bottom: 3rem;
