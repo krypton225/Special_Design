@@ -1,0 +1,134 @@
+.products__cards {
+  width: 100%;
+  height: max-content;
+  margin: 8rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__cards__outer {
+  width: 24%;
+  height: 38rem;
+  position: relative;
+  border-radius: 15px;
+}
+
+.products__cards__outer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #3d3d3d80, #c4b7b77e);
+  transform: skewX(2deg) skewY(4deg);
+}
+
+.products__cards__outer::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #3d3d3d80, #c4b7b77e);
+  transform: skewX(2deg) skewY(4deg);
+  filter: blur(20px);
+}
+
+.products__cards__outer__content {
+  width: 100%;
+  height: 100%;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background-color: #2d2d2d;
+  z-index: 333;
+}
+
+.products__cards__outer__content__img {
+  width: 85%;
+  position: relative;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.products__cards__outer__content__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.products__cards__outer__content__img:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+
+.products__cards__outer__content__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products__cards__outer__content__info__title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.6rem;
+  margin: 2rem auto;
+  color: var(--main-color);
+}
+
+.products__cards__outer__content__info__desc {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+  line-height: 2;
+  color: var(--main-color);
+}
+
+.products__cards__outer__content__info__stars {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.products__cards__outer__content__info__stars .fas.fa-star {
+  color: rgb(255, 201, 136);
+}
+
+.products__cards__outer__content__info__view {
+  width: 90%;
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 1.1px;
+  color: #fff;
+  background-color: var(--main-color);
+  transition: opacity 0.4s ease-in;
+}
+
+.products__cards__outer__content__info__view:hover {
+  opacity: 0.7;
+}

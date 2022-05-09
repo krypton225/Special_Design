@@ -30,7 +30,7 @@ const myImages = [
     landingTitle: "you are welcome, second!",
   },
   {
-    imgSrc: "background-4.png",
+    imgSrc: "background-4.jpg",
     landingTitle: "you are welcome, third!",
   },
   {
