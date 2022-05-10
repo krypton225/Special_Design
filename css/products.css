@@ -55,19 +55,20 @@
   .products__cards__outer {
     width: 35%;
     height: 35rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .products__cards__outer {
-    width: 50%;
+    width: 40%;
   }
 }
 
 @media (max-width: 576px) {
   .products__cards__outer {
     width: 70%;
+    margin-bottom: 4rem;
   }
 }
 
@@ -117,7 +118,7 @@
 }
 
 .products__cards__outer__content__img {
-  width: 85%;
+  width: 90%;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
@@ -147,12 +148,12 @@
   text-align: center;
   text-transform: capitalize;
   font-size: 2.6rem;
-  margin: 2rem auto;
+  margin: 1rem auto 0.5rem;
   color: #fff;
 }
 
 .products__cards__outer__content__info__desc {
-  margin: 1rem auto;
+  margin: 1rem auto 0;
   padding: 0 2px;
   text-align: center;
   font-size: 1.2rem;

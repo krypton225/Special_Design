@@ -14,8 +14,10 @@
       * 1.7- body scrollbar-thumb.
       * 1.8- Selection in body.
       * 1.9- Anchor tag.
+        * 1.9.1- Anchor tag (a:active, a:focus).
       * 1.10- Unorder list tag.
-      * 1.11- Section tag.
+        * 1.10.1- Unorder list li & img tag (li:focus, li:active, img:active, img:focus).
+      * 1.11- Section & footer tag.
 
   * 2- Classes styles:
     * 2.1- container class styles.
@@ -43,6 +45,7 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 :root {
@@ -95,6 +98,19 @@ a {
   text-decoration: none;
 }
 
+a:active,
+a:focus {
+  background: transparent !important;
+  outline: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* *
   * *****************
   * #ul
@@ -103,6 +119,21 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+li:focus,
+li:active,
+img:active,
+img:focus {
+  outline: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* *
