@@ -1,3 +1,29 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * services__content
+  * services__content media query
+  * services__content__left && services__content__center && services__content__right
+  * services__content__left && services__content__center && services__content__right media query
+  * black-text-li
+  * services__content__left::before && services__content__center::before && .services__content__right::before
+  * services__content__center::before
+  * services__content__left::before
+  * services__content__left:hover::before
+  * services__content__right::before
+  * services__content__right:hover::before
+  * services__content__left::before && services__content__right::before media query
+  * services__content__center:hover:before
+  * services__content__left__list li && services__content__center__list li && services__content__right__list li
+  * services__content__left__img && services__content__center__img && services__content__right__img
+  * services__content__left__img img && services__content__center__img img && services__content__right__img img
+
+  * ****************************************************
+*/
+
 .services__content {
   width: 100%;
   height: 50vh;

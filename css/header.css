@@ -1,3 +1,45 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * landing
+  * landing::before
+  * landing__navbar
+  * landing__navbar media query
+  * landing__navbar.sticky-scroll
+  * landing__navbar.sticky-scroll media query
+  * landing__navbar__logo
+  * landing__navbar__logo::before
+  * landing__navbar__logo media query
+  * landing__navbar__logo::first-letter
+  * landing__navbar__logo a
+  * landing__navbar__menu
+  * landing__navbar__menu media query
+  * toggle-navbar-menu
+  * landing__navbar__menu__li
+  * landing__navbar__menu__li media query
+  * landing__navbar__menu__li__anchor
+  * landing__navbar__menu__li__anchor media query
+  * landing__navbar__menu__li__anchor::before
+  * landing__navbar__menu__li__anchor::after
+  * landing__navbar__menu__li__anchor:hover::after
+  * landing__navbar__menu__li__anchor:hover::before
+  * landing__navbar__bars
+  * landing__navbar__bars media query
+  * landing__navbar__bars__line
+  * landing__navbar__bars__line::before
+  * landing__navbar__bars__line::after
+  * landing__intro
+  * landing__intro__title
+  * landing__intro__title media query
+  * landing__intro__desc
+  * landing__intro__desc media query
+
+  * ****************************************************
+*/
+
 .landing {
   min-height: 100vh;
   width: 100%;
@@ -267,7 +309,6 @@
 
 @media (max-width: 768px) {
   .landing__intro__desc {
-    /* font-size: 1.1rem; */
     line-height: 20px;
   }
 }

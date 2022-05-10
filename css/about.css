@@ -1,3 +1,22 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * about__content
+  * about__content media query
+  * about__left
+  * about__left media query
+  * about__left__desc
+  * about__left__desc media query
+  * about__right
+  * about__right media query
+  * about__right img
+
+  * ****************************************************
+*/
+
 .about__content {
   width: 100%;
   display: flex;
