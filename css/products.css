@@ -1,3 +1,33 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * products__cards
+  * products__cards media query
+  * products__cards__outer
+  * products__cards__outer 1st media query
+  * products__cards__outer 2nd media query
+  * products__cards__outer 3rd media query
+  * products__cards__outer::before
+  * products__cards__outer::after
+  * products__cards__outer__content
+  * products__cards__outer__content__img
+  * products__cards__outer__content__img img
+  * products__cards__outer__content__img:hover img
+  * products__cards__outer__content__info
+  * products__cards__outer__content__info__title
+  * products__cards__outer__content__info__desc
+  * products__cards__outer__content__info__stars
+  * products__cards__outer__content__info__stars .fas.fa-star
+  * products__cards__outer__content__info__view
+  * products__cards__outer__content__info__view:hover
+  * products__cards__outer__content__info__view__link
+
+  * ****************************************************
+*/
+
 .products__cards {
   width: 100%;
   height: max-content;

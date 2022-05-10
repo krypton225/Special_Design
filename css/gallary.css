@@ -1,3 +1,26 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * gallary
+  * gallary__content
+  * gallary__content media query
+  * overlay
+  * hide-overlay
+  * popup
+  * popup media query
+  * overlay .fa-times
+  * overlay .fa-times:hover
+  * overlay .fa-times media query
+  * gallary__content img
+  * gallary__content img media query
+  * img-popup
+
+  * ****************************************************
+*/
+
 .gallary {
   width: 90%;
   padding: 0;
@@ -69,7 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.4rem;
   padding: 17px;
   border-radius: 50%;
   color: #fff;
