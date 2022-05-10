@@ -1,3 +1,49 @@
+/* *
+
+  * ****************************************************
+  * ******************** (Index) ***********************
+  * ****************************************************
+
+  * contact
+  * contact media query
+  * contact__content
+  * contact__content__first
+  * contact__content__first media query
+  * contact__content__first__logo
+  * contact__content__first__logo media query
+  * contact__content__first__logo::before
+  * contact__content__first__logo::first-letter
+  * contact__content__first__logo a
+  * contact__content__line
+  * contact__content__line media query
+  * contact__content__first__form
+  * contact__content__first__form media query
+  * contact__content__first__form input & contact__content__first__form textarea
+  * contact__content__first__form input & contact__content__first__form textarea media query
+  * contact__content__first__form textarea
+  * contact__content__first__form input::placeholder & contact__content__first__form textarea::placeholder
+  * contact__content__first__form input[type="submit"]
+  * .contact__content__first__form input[type="submit"]:hover
+  * contact__content__second
+  * contact__content__second media query
+  * contact__content__second__socials
+  * contact__content__second__socials media query
+  * contact__content__second__socials__anchor
+  * contact__content__second__socials__anchor:hover
+  * contact__content__second__socials__anchor:first-child
+  * contact__content__second__socials__anchor:nth-child(2)
+  * contact__content__second__socials__anchor:nth-child(3)
+  * contact__content__second__socials__anchor:nth-child(4)
+  * contact__content__second__socials__anchor::after
+  * contact__content__second__socials__anchor:hover:after
+  * contact__content__second__copyright
+  * contact__content__second__copyright media query
+  * contact__content__second__copyright__name
+  * contact__content__second__copyright__name::before
+
+  * ****************************************************
+*/
+
 .contact {
   margin-top: 20rem;
 }
@@ -45,6 +91,12 @@
   background-color: rgba(158, 158, 158, 0.219);
 }
 
+@media (max-width: 991px) {
+  .contact__content__first__logo {
+    display: none;
+  }
+}
+
 .contact__content__first__logo::before {
   content: "";
   position: absolute;
@@ -53,12 +105,6 @@
   width: 15px;
   height: 3px;
   background-color: var(--main-color);
-}
-
-@media (max-width: 991px) {
-  .contact__content__first__logo {
-    display: none;
-  }
 }
 
 .contact__content__first__logo::first-letter {
